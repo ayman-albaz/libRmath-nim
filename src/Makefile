@@ -46,9 +46,9 @@ default: release
 %.do: %.c
 	$(CC) $(CPPFLAGS) $(CFLAGS-add) $(CFLAGS) $(fPIC) -std=gnu99 -I../include -g  -c $< -o $@
 
-release debug: libRmath-julia.$(SHLIB_EXT)
+release debug: libRmath-nim.$(SHLIB_EXT)
 
-libRmath-julia.$(SHLIB_EXT): $(XOBJS)
+libRmath-nim.$(SHLIB_EXT): $(XOBJS)
 	rm -rf $@
 ifeq ($(USE_DSFMT),1)
 	$(CC) $(LDFLAGS-add) $(LDFLAGS) -shared -o $@ $^ -L$(DSFMT_libdir) -ldSFMT
