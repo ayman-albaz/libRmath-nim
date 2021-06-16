@@ -167,13 +167,11 @@ double  Rlog1p(double);
 
 
 #ifndef M_LN_SQRT_PI
-#define M_LN_SQRT_PI	0.572364942924700087071713675677	/* log(sqrt(pi))
-								   == log(pi)/2 */
+#define M_LN_SQRT_PI	0.572364942924700087071713675677	/* log(sqrt(pi)) == log(pi)/2 */
 #endif
 
 #ifndef M_LN_SQRT_2PI
-#define M_LN_SQRT_2PI	0.918938533204672741780329736406	/* log(sqrt(2*pi))
-								 == log(2*pi)/2 */
+#define M_LN_SQRT_2PI	0.918938533204672741780329736406	/* log(sqrt(2*pi) == log(2*pi)/2 */
 #endif
 
 #ifndef M_LN_SQRT_PId2
